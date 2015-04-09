@@ -1,0 +1,10 @@
+name = "Gold Cave";
+description = "You can tell you're near the surface, as you can see TREE ROOTS popping through the cave's roof.  Next to the tree roots, you can see a small amount of GOLD.  GRAPPLING HOOK  There's an exit to the west.";
+
+itemList = { "treeroots.txt" :
+			 "gold.txt" };
+
+tagList = { "grappling hook trigger", "GRAPPLING HOOK", "A GRAPPLING HOOK hangs from the roots.", "Unfortunately, it's all about 50 feet above you." };
+
+exitList = { {"gate" : "west" : "w"}, "To the west is very dark.", "darkpassage.txt" :
+			 "CLIMB   THE   ROPE", "", "goldCaveHigh.txt" };

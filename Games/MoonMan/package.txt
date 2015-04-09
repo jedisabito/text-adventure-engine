@@ -1,0 +1,13 @@
+itemName = "package";
+lookDescription = "What a lovely package. Open it, Moon Man!";
+heldDescription = " ";
+
+uniqueCommands = {{"OPEN" : "LOOK INSIDE"}, 
+"You move to open the package. As you lift the flap, you can hear a click. 'Goodbye, Moon Man,' says a robotic voice flatly. There is an explosion to the EAST, creating a massive hole in the rock. Falling rubble blocks your path back to your ship.",
+"IN_ROOM", "IN_INVENTORY", 
+"REMOVE1|OPEN_EXIT:east|LOCK_EXIT:south", {}, "package"};
+
+
+droppable = false;
+canTake=false;
+decorative = true;

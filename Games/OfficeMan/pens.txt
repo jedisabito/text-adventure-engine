@@ -1,0 +1,7 @@
+itemName = "pens";
+lookDescription = "You need these pens, Office Man.";
+heldDescription = "You need these pens, Office Man.";
+
+droppable=false;
+canTake=false;
+decorative = true;

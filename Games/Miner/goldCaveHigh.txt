@@ -1,0 +1,8 @@
+name = "Gold Cave - High";
+description = "Suspended far above the ground by your grappling hook, you can see some GOLD embedded in the rock.";
+
+itemList = { "helperInGoldCave.txt" :
+			 "highgold.txt" };
+
+exitList = { "CLIMB   THE   ROPE", "", "goldCave.txt" :
+			 "FINISHED   GAME", "", "gotGold.txt"};

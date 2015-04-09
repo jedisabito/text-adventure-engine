@@ -1,0 +1,10 @@
+name = "Ledge";
+
+description = "GRAPPLING HOOKhe entrance to a DARK PASSAGE is to the north.";
+
+itemList = { "grapplingropeattop.txt" };
+
+tagList = { "grappling hook", "GRAPPLING HOOK", "There is a GRAPPLING HOOK hanging from the edge of the ledge, and t", "T" };
+
+exitList = { {"dark passage" : "north" : "n" }, "It is very dark.", "darkpassage.txt" :
+			  "CLIMB   THE   ROPE", "", "centralCavern.txt"};

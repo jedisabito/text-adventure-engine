@@ -1,0 +1,12 @@
+itemName = "rope";
+lookDescription = "It's about 50 feet long.";
+heldDescription = "Well, that was annoying to coil up.  Quite long, though.  50 feet.";
+
+uniqueCommands = {{"combine" : "attach" : "tie" }, "You have a grappling hook now.  I guess.", "IN_INVENTORY", "IN_INVENTORY",
+"REMOVE1|REMOVE2|ADD_TO_INVENTORY:0", "grapplinghook.txt", "rope", {"with" : "and" : "to" : "on"}, "fish hook" :
+{"throw" : "use"}, "You hit the chain link, but the rope just slides down...", "IN_INVENTORY", "IN_ROOM",
+"NO_EFFECT", "rope", {"at" : "with" : "on"}, "chain link"};
+
+canTake = true;
+decorative = true;
+droppable = true;

@@ -1,0 +1,11 @@
+itemName = "cloth bag";
+lookDescription = "The bag is small, and appears to be mostly empty.";
+heldDescription = "The bag has a zipper, it looks like you could easily open it.";
+
+uniqueCommands = {{"open"}, "You find a single FISH HOOK in the bag.  You take it.", "IN_INVENTORY", "IN_INVENTORY",
+"ADD_TO_INVENTORY:0,1", {"fishhook.txt" : "openclothbag.txt"}, "cloth bag"};
+
+
+canTake = true;
+decorative = true;
+droppable = true;

@@ -1,0 +1,12 @@
+name = "Moon 5";
+
+description = "You go through the gate. On the other side, you see Moon Man One.
+'Moon Man One!' you exclaim. 'Is it really you?'
+'Yes,' says Moon Man One. 'It is me, Moon Man One.'
+'Wow!' you say.
+'Thanks for saving me, Moon Man 2145. Our maintenance robot went rogue and took over the whole Moon Lab. If you hadn't shown up, it might have been the end for me.'
+'No problem, Moon Man One!' you say.
+'Now, let's get out of here.' says Moon Man One. 'Ship control!'
+'Yes, Captain?' says a robotic voice over the intercom.
+'Set a course for Planet Mars,' says Moon Man One. 'We're going Home.'
+";

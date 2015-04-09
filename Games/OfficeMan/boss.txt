@@ -1,0 +1,12 @@
+itemName = "boss";
+lookDescription = "Your BOSS is waiting for those reports.";
+heldDescription = " ";
+
+uniqueCommands = {{"TALK" : "SPEAK WITH" : "LEISURELY ENGAGE"}, 
+"'Hey, Boss,' you say. The BOSS thinks you're stalling. Give him the reports, man.", 
+"IN_INVENTORY", "IN_INVENTORY",
+"NO_EFFECT", "BOSS"};
+
+droppable=false;
+canTake=false;
+decorative = false;

@@ -1,0 +1,12 @@
+itemName = "unfinished reports";
+lookDescription = " ";
+heldDescription = "These reports are very much unfinished, let me tell you that much.";
+
+uniqueCommands = {{"FINISH" : "WORK ON" : "COMPLETE"}, 
+"What admirable diligence. You finish up those reports right quick.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0|OPEN_EXIT:out", {"finishedreports.txt"}, "UNFINISHED REPORTS"};
+
+droppable=false;
+canTake=false;
+decorative = false;

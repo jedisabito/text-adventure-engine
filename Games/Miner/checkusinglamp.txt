@@ -1,0 +1,8 @@
+itemName = "check using lamp";
+lookDescription = "You can't see that.";
+
+uniqueCommands = {{"use" : "enable" : "take out" : "hold" }, "You can now see!", "IN_INVENTORY", "IN_ROOM",
+"ADD_TO_ROOM:0,1,2,3", {"usingLamp.txt" : "stalactites.txt" : "stalagmites.txt" : "button.txt"}, "lamp" };
+
+canTake = false;
+decorative = false;

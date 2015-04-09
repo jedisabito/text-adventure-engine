@@ -1,0 +1,5 @@
+itemName = "tree roots";
+lookDescription = "You can see tree roots sticking through gaps in the roofs rocks.  You can also see GOLD next to them.";
+
+canTake = false;
+decorative = false;

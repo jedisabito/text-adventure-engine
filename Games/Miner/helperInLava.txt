@@ -1,0 +1,9 @@
+itemName = "ropeHelperInLava";
+lookDescription = "You can't see that.";
+
+uniqueCommands = {{"climb rope"}, "You climbed down the rope.", "IN_ROOM", "IN_INVENTORY",
+"GOTO_EXIT:CLIMB   THE   ROPE", "", ""};
+
+canTake = false;
+decorative = false;
+droppable = false;

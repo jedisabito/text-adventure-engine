@@ -1,0 +1,5 @@
+itemName = "minecarts";
+lookDescription = "They're moving quite fast, mostly from the dangerous southern sector.  You're grandfather died there, freak avalanche.  He always refused to wear a helmet.";
+
+canTake=false;
+decorative = false;

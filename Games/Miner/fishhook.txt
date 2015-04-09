@@ -1,0 +1,10 @@
+itemName = "fish hook";
+lookDescription = "Very small.  The fact you can see this is kind of weird, really.  Whatever.";
+heldDescription = "It's pretty small, but very sturdy.  It has a bit of blood on it.  Poor fish.";
+
+uniqueCommands = {{"combine": "attach" : "tie" : "use"}, "You have a grappling hook now.  I guess.", "IN_INVENTORY", "IN_INVENTORY",
+"REMOVE1|REMOVE2|ADD_TO_INVENTORY:0", "grapplinghook.txt", "fish hook", {"with" : "and" : "to" : "on"}, "rope"};
+
+canTake = true;
+decorative = true;
+droppable = true;

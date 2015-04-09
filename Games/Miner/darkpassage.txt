@@ -1,0 +1,10 @@
+name = "Dark Passage";
+description = "USING LAMP";
+
+itemList = { "checkusinglamp.txt" };
+
+tagList = { "using lamp", "USING LAMP", "STALACTITES and STALAGMITES hang from the ceiling and rise from the floor of the cramped, damp, still poorly lit room.  There is an exit to the southEAST.", "A very dark passage.  Hopefully you can use some sort of light.  You can see light to the south." :
+			"east", "EAST", " and a large, now open, gate to the east near a BUTTON, depressed by an IRON ORE, on the ground", " and a closed gate to the east, near a BUTTON on the ground" };
+
+exitList = { {"ledge" : "south" : "s"}, "A much more brightly lit area lies to the south.  You can hear moving minecarts from it.", "ledge.txt" :
+			 {"gate" : "east" : "e"}, "You can see shimmering beyond the now open gate.", "goldCave.txt", "The gate is large and imposing, no doubt to guard the most valuable parts of the mine from thieves.", true};

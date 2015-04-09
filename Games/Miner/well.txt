@@ -1,0 +1,8 @@
+itemName = "well";
+lookDescription = "The well is actually fairly well put together, with cobblestones that, for some reason, appear to have come from outside the mine itself.  The bucket is missing, but the well is very full of water.";
+
+uniqueCommands = {{"dip" : "stick"}, "Your pick is wet now.", "IN_INVENTORY", "IN_ROOM",
+"REMOVE1|ADD_TO_INVENTORY:0", "wetpick.txt", "pick", "in", "well"};
+
+canTake=false;
+decorative = false;

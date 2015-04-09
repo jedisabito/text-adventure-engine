@@ -1,0 +1,12 @@
+name = "Moon 3";
+
+description = "You find yourself in front of a strange moon lab.DOOR";
+
+itemList = { "moonlab.txt" :
+             "cardreader.txt" :
+             "moon.txt" };
+
+tagList = {"door", "DOOR", " The DOOR to the lab is open.", " There is a large metal DOOR preventing entrance to the lab, with a CARD READER mounted next to it."};
+
+exitList = { {"door" : "lab" : "moon lab"}, "The DOOR leads into the lab.", "moon4.txt", "The DOOR leading into the lab is closed.", true:
+             {"west" : "w" : "passage"}, "The passage leads back to where you located the beacon.", "moon3.txt", " ", false};

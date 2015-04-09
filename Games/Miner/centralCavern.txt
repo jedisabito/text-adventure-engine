@@ -1,0 +1,14 @@
+name = "Central Cavern";
+
+description = "You are in a huge cavern, the crossroads of the mine.  Above, minecarts whiz by on suspended tracks, filled to the brim with valuable metal.
+There is an exit to the SMALL EASTERN CAVE, and a path to the FORGE to the north west.  There is a ledge to the north, below it, is a PATH. On it, inaccessibly high, there is a DARK PASSAGE.  Far out of reach, the ledge has CHAIN LINK hanging over the edge, the remnants of a broken bridge.GRAPPLING HOOK";
+
+itemList = { "chainlink.txt" :
+			 "minecarts.txt"};
+
+tagList = { "grappling hook trigger", "GRAPPLING HOOK", "  There is a GRAPPLING HOOK hanging from the CHAIN LINK.", "" };
+
+exitList = { {"small eastern cave" : "east" : "e"}, "A small wooden door, with "Eastern Cave" crudely carved in the rock above it", "smallEasternCave.txt" :
+			 {"forge" : "northwest" : "north west" : "nw" }, "It's a narrow, dusty path.  A sign next to it identifies it as going to the forge.", "forge.txt" :
+			 {"path" : "north" : "n" }, "You can see a well down the path.", "wellCave.txt" :
+			 {"CLIMB   THE   ROPE"}, "", "ledge.txt" };

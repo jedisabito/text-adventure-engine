@@ -1,0 +1,17 @@
+name = "Water Cooler";
+
+description = "You are standing next to the water cooler.PHILCUBICLEBOSSOFFICE";
+
+itemList = { "phil.txt" :
+	     "thecooler.txt" :
+	     "philscupofwater.txt"};
+
+tagList = { "phil", "PHIL", " PHIL is nearby, drinking from a CUP OF WATER.", " PHIL left." :
+	    "cubicle", "CUBICLE", " There is a way back to your CUBICLE.", "" :
+	    "boss's office", "BOSSOFFICE", " The door to the BOSS'S OFFICE is open.", " The door to the BOSS'S OFFICE is closed."};
+
+
+exitList = { {"cubicle" : "back"}, "That's the way BACK to your cubicle.", 
+             "cubicle.txt", " ", false:
+             {"office" : "boss" : "boss's office"}, "The door to the BOSS'S OFFICE looks very open.", 
+             "bossoffice.txt", "The door to the BOSS'S OFFICE is quite closed at the moment.", true};

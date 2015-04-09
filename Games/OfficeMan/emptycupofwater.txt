@@ -1,0 +1,12 @@
+itemName = "empty cup of water";
+lookDescription = " ";
+heldDescription = "So worth it.";
+
+uniqueCommands = {{"DRINK" : "DRINK FROM"}, 
+"It's empty.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"NO_EFFECT", "EMPTY CUP OF WATER"};
+
+droppable=false;
+canTake=false;
+decorative = false;

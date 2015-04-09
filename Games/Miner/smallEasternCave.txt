@@ -1,0 +1,13 @@
+name = "Small Eastern Cave";
+
+description = "You are in a small cave.  A flickering LAMPLAMP REF is all that illuminates the room.  An empty minecart is on some tracks that run through the cave.IRON  The only door is to the west, back toward the CENTRAL CAVERN.";
+
+itemList = { "lamp.txt" :
+			 "minecart.txt" :
+			 "iron.txt" };
+		 
+tagList = { "iron", "IRON", "  Their is a small vein of IRON.", "" :
+			"lamp", "LAMP REF", " attached to the wall", " that you are holding" };
+
+
+exitList = { {"Central Cavern" : "west" : "w"}, "A small wooden door.", "centralCavern.txt"};

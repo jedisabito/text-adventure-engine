@@ -1,0 +1,12 @@
+itemName = "cup of water";
+lookDescription = "That CUP OF WATER sure looks good.";
+heldDescription = "So worth it.";
+
+uniqueCommands = {{"DRINK FROM" : "DRINK"}, 
+"You drink from the cup. It's just as cold and delicious as you imagined it would be.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0", {"emptycupofwater.txt"}, "CUP OF WATER"};
+
+droppable=false;
+canTake=false;
+decorative = false;

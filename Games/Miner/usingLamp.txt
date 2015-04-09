@@ -1,0 +1,5 @@
+itemName = "using lamp";
+lookDescription = "You can't see that.";
+
+canTake = false;
+decorative = false;

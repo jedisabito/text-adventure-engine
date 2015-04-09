@@ -1,0 +1,6 @@
+itemName = "iron ore";
+lookDescription = "A fairly valuable metal.";
+heldDescription = "You mined this yourself, so it's safe to say it's your's.  Well, the Mine's, but your's to hand in.  It's surprisingly heavy.";
+
+canTake = false;
+decorative = false;

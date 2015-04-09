@@ -1,0 +1,9 @@
+itemName = "safety helmet";
+lookDescription = "You should probably pick that up.  If your grandfather taught you one thing, it was to always wear your safety helmet.";
+heldDescription = "It's too bad the light is broken, and that dent in the side is uncomfortable. Still, it keeps you safe.";
+
+uniqueCommands = {{"wear"}, "You're already wearing it... why would you not be wearing your safety helmet?.", "IN_INVENTORY", "IN_ROOM", "NO_EFFECT", "safety helmet" };
+
+canTake=true;
+decorative = true;
+droppable = true;

@@ -1,0 +1,12 @@
+itemName = "broken and melted lamp";
+lookDescription = "The lamp's connection to the wall melted from the heat of the flame, and the candle burned up.  It's fallen to the ground.";
+heldDescription = "The lamp is useless.  The candles gone, and you couldn't open the cage without some sort of key.  The connection holding it to the wall was melted by heat.";
+
+uniqueCommands = {{"put" : "place" : "set"}, "The gate slightly opens as your hand presses the lamp down, but immediately swings shut again.  The lamp is not heavy enough.  You pick the lamp back up.", "IN_INVENTORY", "IN_ROOM",
+"NO_EFFECT", "broken and melted lamp", "on", "button" :
+{"repair" : "fix"}, "You don't know how to do that.  Plus, it's missing a candle.", "IN_INVENTORY", "IN_ROOM",
+"NO_EFFECT", "broken and melted lamp"};
+
+canTake=true;
+decorative = true;
+droppable = true;

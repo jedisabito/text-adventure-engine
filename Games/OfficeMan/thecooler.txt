@@ -1,0 +1,12 @@
+itemName = "water cooler";
+lookDescription = "This is such a good water cooler. You have no idea, man.";
+heldDescription = " ";
+
+uniqueCommands = {{"DRINK" : "DRINK FROM" : "USE"}, 
+"Dang it - fresh out of cups.", 
+"IN_ROOM", "IN_INVENTORY", 
+"NO_EFFECT", "WATER COOLER"};
+
+droppable=false;
+canTake=false;
+decorative = false;

@@ -1,0 +1,11 @@
+name = "Cave with the Well";
+
+description = "The cave is empty, except for a WELL in the centerCLOTH BAG.  There is a path to the south, to the CENTRAL CAVERN, and a path to the northwest.";
+
+itemList = { "well.txt" :
+			  "clothbag.txt" };
+			  
+tagList = {"cloth bag", "CLOTH BAG", " and a CLOTH BAG in the corner", "" };
+
+exitList = { {"Central Cavern" : "south" : "s"}, "A long path, leading back to the Central Cavern.", "centralCavern.txt" :
+			 {"northwest" : "north west" : "nw"}, "The path seems to be emitting a lot of heat.", "lavaPit.txt"};

@@ -1,0 +1,8 @@
+itemName = "gold";
+lookDescription = "An incredibly valuable metal, and a major source of income for the mine, and a miner.";
+
+uniqueCommands = {{"throw" : "toss" : "use" }, "It hits the gold, but has no where to latch onto.", "IN_INVENTORY", "IN_ROOM",
+"NO_EFFECT", "grappling hook", {"at" : "with" : "on"}, "gold"};
+
+canTake=false;
+decorative = false;

@@ -1,0 +1,6 @@
+itemName = "BEACON";
+lookDescription = "That is some beacon.";
+heldDescription = " ";
+
+canTake=false;
+decorative = false;

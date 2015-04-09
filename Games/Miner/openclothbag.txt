@@ -1,0 +1,13 @@
+itemName = "cloth bag";
+lookDescription = "The bag is small, and appears completely empty.";
+heldDescription = "The bag is open, and is completely empty.";
+
+uniqueCommands = {{"close"}, "The zipper's jammed.", "IN_INVENTORY", "IN_INVENTORY",
+"NO_EFFECT", "cloth bag" :
+{"put" : "place" : "set"}, "The gate slightly opens as your hand presses the bag down, but immediately swings shut again.  The bag is not heavy enough.  You pick the bag back up.", "IN_INVENTORY", "IN_ROOM",
+"NO_EFFECT", "cloth bag", "on", "button" };
+
+
+canTake = true;
+decorative = true;
+droppable = true;

@@ -1,0 +1,12 @@
+itemName = "desk";
+lookDescription = "A rather ordinary desk.";
+heldDescription = " ";
+
+uniqueCommands = {{"SEARCH" : "LOOK THROUGH" : "LOOK IN" : "OPEN" : "GO THROUGH" : "RUMMAGE"}, 
+"You already went through your desk.", 
+"IN_ROOM", "IN_INVENTORY", 
+"NO_EFFECT", "DESK"};
+
+droppable=false;
+canTake=false;
+decorative = false;

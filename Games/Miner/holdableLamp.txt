@@ -1,0 +1,7 @@
+itemName = "lamp";
+lookDescription = "A flickering candle in a steel cage.";
+heldDescription = "It provides illumination to you.";
+
+canTake = true;
+decorative = true;
+droppable = false;

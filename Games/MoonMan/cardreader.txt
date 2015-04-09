@@ -1,0 +1,7 @@
+itemName = "card reader";
+lookDescription = "Would fit a keycard nicely.";
+heldDescription = " ";
+
+droppable=false;
+canTake=false;
+decorative = false;

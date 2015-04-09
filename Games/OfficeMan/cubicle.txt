@@ -1,0 +1,15 @@
+name = "Cubicle";
+
+description = "You are in your cubicle.COMPUTERNOTEOUT";
+
+itemList = { "computer.txt" :
+             "note.txt" : 
+             "desk.txt" };
+
+tagList = { "computer", "COMPUTER", " Your COMPUTER sits on your DESK in front of you.", "":
+	    "note", "NOTE", " There is a NOTE on the wall.", "":
+            "out", "OUT", " The exit to your cubicle leads OUT to the water cooler.", ""};
+
+
+exitList = { {"out" : "o" : "water cooler" : "wc"}, "You should head out to the water cooler, yeah.", 
+             "watercooler.txt", "The way OUT leads to the ol' WC, as they call it 'round the office.", true};

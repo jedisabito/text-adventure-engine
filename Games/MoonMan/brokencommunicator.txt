@@ -1,0 +1,12 @@
+itemName = "UNRESPONSIVECOMMUNICATOR";
+lookDescription = "Used for communicating.";
+heldDescription = "Used for communicating.";
+
+uniqueCommands = {{"USE" : "ACTIVATE" : "TALK" }, 
+"You get no response from the device.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"NO_EFFECT", "UNRESPONSIVECOMMUNICATOR"};
+
+droppable = false;
+canTake=true;
+decorative = true;

@@ -1,0 +1,10 @@
+itemName = "iron ore";
+lookDescription = "A fairly valuable metal.";
+heldDescription = "You mined this yourself, so it's safe to say it's yours.  Well, the Mine's, but yours to hand in.  It's surprisingly heavy.";
+
+uniqueCommands = {{"put" : "place" : "set"}, "The gate swings open.", "IN_INVENTORY", "IN_ROOM",
+"REMOVE1|OPEN_EXIT:gate|ADD_TO_ROOM:0", "untakeableironore.txt", "iron ore", "on", "button" };
+
+canTake = true;
+decorative = true;
+droppable = true;

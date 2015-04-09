@@ -1,0 +1,10 @@
+itemName = "lamp";
+lookDescription = "A flickering candle in a steel cage, affixed to the wall by a narrow metal spike, provide the only light in the room.";
+
+uniqueCommands = {{"hit" : "smash" : "bash" : "burn" : "heat" : "break"}, "There's a clanging sound, and the lamp's mount breaks from the heat.  You manage to catch it, and the candle keeps burning.  Don't put it down in case of a draft!  Your pick has cooled down.",
+"IN_ROOM", "IN_INVENTORY", "REMOVE1|REMOVE2|ADD_TO_INVENTORY:0,1", {"holdableLamp.txt" : "pick.txt"}, "lamp", {"with" : "on" }, "hot pick" :
+{"use"}, "There's a clanging sound, and the lamp's mount breaks from the heat.  You manage to catch it, and the candle keeps burning.  Don't put it down in case of a draft!  Your pick has cooled down.",
+"IN_INVENTORY", "IN_ROOM", "REMOVE1|REMOVE2|ADD_TO_INVENTORY:0,1", {"holdableLamp.txt" : "pick.txt"}, "hot pick", {"with" : "on" }, "lamp"};
+
+canTake = false;
+decorative = false;

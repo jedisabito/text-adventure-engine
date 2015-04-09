@@ -1,0 +1,17 @@
+itemName = "computer";
+lookDescription = "An email from the Boss lights up the screen.
+'Hey Office,
+Remember, those reports I sent you need to be on my desk before you leave.
+Thanks,
+Boss Man'
+Right. The reports. Yes.";
+heldDescription = " ";
+
+uniqueCommands = {{"TURN OFF" : "SHUT DOWN"}, 
+"Your work here is not done yet, Office Man.", 
+"IN_ROOM", "IN_INVENTORY", 
+"NO_EFFECT", "COMPUTER"}; 
+
+droppable=false;
+canTake=false;
+decorative = true;

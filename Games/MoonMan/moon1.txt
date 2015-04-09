@@ -1,0 +1,15 @@
+name = "Moon 1";
+
+description = "You are on a flat patch of rock, near where your ship landed.COMMUNICATOR NORTH";
+
+itemList = { "moonrock.txt" :
+"communicator.txt" :
+"beacon.txt" :
+"ship.txt" :
+"moon.txt"};
+
+tagList = { "communicator", "COMMUNICATOR", " You can see your COMMUNICATOR on the ground nearby.", "" :
+"north", "NORTH", "You notice a distant beacon to the NORTH.", ""};
+
+
+exitList = { {"north" : "n" : "beacon"}, "The beacon glows as if it were a light of some sort.", "moon2.txt", "", "false" };

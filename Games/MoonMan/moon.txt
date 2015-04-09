@@ -1,0 +1,7 @@
+itemName = "moon";
+lookDescription = "It's not very interesting. Mostly just rocks.";
+heldDescription = " ";
+
+droppable=false;
+canTake=false;
+decorative = false;

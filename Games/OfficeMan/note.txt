@@ -1,0 +1,11 @@
+itemName = "note";
+lookDescription = "The note has a list of things to do scrawled on it in pen:
+'-Meet with Phil at the WC.
+ -Get reports to Boss Man.
+ -Water plant.'
+Plant? What plant? You don't recall writing this.";
+heldDescription = " ";
+
+droppable=false;
+canTake=false;
+decorative = false;

@@ -1,0 +1,16 @@
+itemName = "robot";
+lookDescription = "It doesn't look happy.";
+heldDescription = " ";
+
+uniqueCommands = {{"BREAK" : "SMASH" : "DESTROY" : "ATTACK"}, 
+"You lift the moonhammer over your head and bring it down powerfully on the robot's fragile head. The machine is smashed into bits. The gate opens behind it.", 
+"IN_ROOM", "IN_INVENTORY", 
+"REMOVE1|OPEN_EXIT:gate", {}, "ROBOT", {"WITH" : "USING" : "ON"}, "MOONHAMMER" :
+{"TALK" : "SPEAK" : "COMMUNICATE WITH" : "LEISURELY ENGAGE" },
+"'Greetings!' you say to the robot. 'I am Moon Man. I am here to investigate your lab. Please step aside.' The robot does not respond.",
+"IN_ROOM", "IN_INVENTORY",
+"NO_EFFECT", "ROBOT"};
+
+droppable=false;
+canTake=false;
+decorative = false;

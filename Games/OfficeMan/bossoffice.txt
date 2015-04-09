@@ -1,0 +1,12 @@
+name = "Boss's Office";
+
+description = "You are in your boss's office.BOSSDOOR";
+
+itemList = { "boss.txt" };
+
+tagList = { "boss", "BOSS", " The BOSS looks up at you from behind his desk, expecting some reports.", "" :
+	    "door", "DOOR", " The door is now open.", " The door to the office closed behind you."};
+
+
+exitList = { {"door" : "d" : "out" : "back" : "home"}, "The door out of the office is open.", 
+             "home.txt", "The door out of the office is closed.", true};

@@ -1,0 +1,12 @@
+itemName = "cup of water";
+lookDescription = "That CUP OF WATER sure looks good.";
+heldDescription = "So worth it.";
+
+uniqueCommands = {{"STEAL" : "TAKE" : "GRAB" : "SEIZE" : "CLAIM" : "ACQUIRE"}, 
+"You've had enough. You snatch the CUP OF WATER straight out of PHIL's hands. He looks at you in shock for several moments. Then, he flees, leaving a small STAPLER behind. You pick it up.", 
+"IN_ROOM", "IN_ROOM", 
+"REMOVE1|REMOVE2|ADD_TO_INVENTORY:0,1", {"cupofwater.txt": "stapler.txt"}, "CUP OF WATER", {"FROM" : "AWAY FROM"}, "PHIL"};
+
+droppable=false;
+canTake=false;
+decorative = false;

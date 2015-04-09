@@ -1,0 +1,12 @@
+itemName = "moonhammer";
+lookDescription = "You should definitely get that MOONHAMMER, Moon Man.";
+heldDescription = "Used for DESTROYING.";
+
+uniqueCommands = {{"USE", "BRING DOWN "}, 
+"You lift the moonhammer over your head and bring it down powerfully on the robot's fragile head. The machine is smashed into bits. The gate opens behind it.", 
+"IN_INVENTORY", "IN_ROOM", 
+"REMOVE2|OPEN_EXIT:gate", {}, "MOONHAMMER", {"ON" : "WITH"}, "ROBOT"};
+
+droppable = false;
+canTake=true;
+decorative = true;

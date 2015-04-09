@@ -1,0 +1,14 @@
+name = "Moon 2";
+
+description = "You are in a moon valley near the beacon.PACKAGESOUTHEAST";
+
+itemList = { "package.txt" :
+             "beacon.txt" :
+	     "moon.txt" };
+
+tagList = {"package", "PACKAGE", " There is a PACKAGE, presumably for Moon Man, at its base. It is inexplicably glued to the ground.", "" :
+           "south", "SOUTH", " Your ship is SOUTH of here.", " The way SOUTH has been blocked by fallen rocks," :
+           "east", "EAST", " but there is a newly formed passage to the EAST.", ""};
+
+exitList = { {"south" : "s" : "ship"}, "That way leads back to your ship.", "moon1.txt", "The way back to your ship is blocked.", false:
+             {"east" : "e" : "passage"}, "The explosions formed a passage through the rock wall.", "moon3.txt", "Just a normal rock wall.", true};

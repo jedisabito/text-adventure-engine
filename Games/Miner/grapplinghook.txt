@@ -1,0 +1,10 @@
+itemName = "grappling hook";
+lookDescription = "You should probably pick that up before you loose the hook.  The hook is very small.";
+heldDescription = "It's for grappling, and it's made with a fishing hook.  Have fun.";
+
+uniqueCommands = {{"throw" : "use" }, "You now have a path up to the ledge.", "IN_INVENTORY", "IN_ROOM",
+"REMOVE1|ADD_TO_ROOM:0,1", {"grapplinghooktrigger.txt" : "roomgrapplinghook.txt"}, "grappling hook", {"at" : "with" : "on"}, "chain link"};
+
+canTake = true;
+decorative = true;
+droppable = true;

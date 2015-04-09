@@ -1,0 +1,8 @@
+itemName = "grappling hook";
+lookDescription = "It's for grappling, and it's made with a fishing hook.  Have fun.";
+
+uniqueCommands = {{"climb"}, "You climbed the rope.", "IN_ROOM", "IN_INVENTORY",
+"GOTO_EXIT:CLIMB   THE   ROPE", "", "grappling hook"};
+
+canTake = false;
+decorative = false;

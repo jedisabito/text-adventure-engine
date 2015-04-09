@@ -1,0 +1,12 @@
+itemName = "MOONROCK";
+lookDescription = "It glows mysteriously.";
+heldDescription = "It glows mysteriously.";
+
+uniqueCommands = {{"BREAK" : "SMASH" : "OPEN" : "SHATTER" : "DESTROY" : "BREAK OPEN"}, 
+"You lift the moonrock above your head and throw it to the ground forcefully. It shatters, revealing a KEYCARD inside. You take it. Good job, Moon Man!", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0", {"keycard.txt"}, "MOONROCK"};
+
+droppable=false;
+canTake=true;
+decorative = true;

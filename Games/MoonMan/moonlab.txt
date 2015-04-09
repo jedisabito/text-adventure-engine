@@ -1,0 +1,7 @@
+itemName = "moon lab";
+lookDescription = "You should investigate this moon lab, Moon Man.";
+heldDescription = " ";
+
+droppable=false;
+canTake=false;
+decorative = false;

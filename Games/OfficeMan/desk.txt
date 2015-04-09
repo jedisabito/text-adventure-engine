@@ -1,0 +1,12 @@
+itemName = "desk";
+lookDescription = "A rather ordinary desk. Things are inside it, certainly.";
+heldDescription = " ";
+
+uniqueCommands = {{"SEARCH" : "LOOK THROUGH" : "LOOK IN" : "OPEN" : "GO THROUGH" : "RUMMAGE"}, 
+"You go through your desk. It's a total mess, but you find your UNFINISHED REPORTS buried in the middle shelf. You gather them quickly.", 
+"IN_ROOM", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0|ADD_TO_ROOM:1", {"unfinishedreports.txt" : "emptydesk.txt"}, "DESK"};
+
+droppable=false;
+canTake=false;
+decorative = false;

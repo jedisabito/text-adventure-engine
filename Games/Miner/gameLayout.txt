@@ -1,0 +1,37 @@
+name = "Miner";
+
+startingRoom = "centralCavern.txt";
+startingDescription = "As a miner, life is pretty tough for you.  You really, really, need to find some gold.  Otherwise, you might have to sell both your children, Jonny and Molly, into slavery.
+Type "help" if you need to learn the commands.";
+endingRoom = "gotGold.txt";
+endingDescription = "You got some gold!  Now you don't have to sell both your children into slavery- just one!  You think you'll keep Molly.";
+help = "To look around, type "look".  You can also type "look", and then an exit or item to examine it.
+To move, type "go", and then where you want to go.
+To take items, simply type "take" followed by the item name.
+To drop an item you're holding, type "drop" followed by the item name.
+To view your inventory, type "inv".
+To quit, simply type "quit".
+Other commands may work as well, so experiment, and think about what makes sense with the items you have and where you are.";
+
+prompt = "Enter a command: ";
+
+invalidDirError = "You can't go that way.";
+invalidLockedError = "You can't go that way.";
+invalidLookError = "You can't see that.";
+invalidTakeUnseenError = "You can't see that";
+invalidTakeCantTakeError = "You can't take that.";
+takeNoItemSpecifiedError = "Specify something to take!";
+invalidDropCantDropError = "You can't drop that.  You might need it!";
+invalidDropNonExistentError = "You don't have that.";
+invalidDropNoItemSpecifiedError = "Specify something to drop.";
+invalidCommandError = "What are you trying to do?";
+
+lookCmds = {"look" : "examine"};
+getCmds = {"get" : "take" : "grab"};
+dropCmds = {"drop"};
+goCmds = {"go" : "walk" : "run" : "dash"};
+invCmds = {"inventory" : "inv"};
+helpCmds = {"help" : "stuck"};
+quitCmds = {"quit" : "stop" : "end" : "finish"};
+
+startingInventory = { "pick.txt" : "safetyhelmet.txt" };

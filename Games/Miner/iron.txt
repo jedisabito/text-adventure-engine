@@ -1,0 +1,5 @@
+itemName = "iron";
+lookDescription = "A fairly valuable metal.  Worth mining, anyway.";
+
+canTake=false;
+decorative = false;

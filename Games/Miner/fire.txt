@@ -1,0 +1,5 @@
+itemName = "fire";
+lookDescription = "The fire is being used to heat up the BENT WEAPONS, so they can be reshaped.  It's making the whole room very uncomfortable.";
+
+canTake = false;
+decorative = false;

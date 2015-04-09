@@ -1,0 +1,12 @@
+itemName = "keycard";
+lookDescription = "Would fit perfectly into a card reader.";
+heldDescription = "Would fit perfectly into a card reader.";
+
+uniqueCommands = {{"SWIPE" : "SLIDE" : "USE"}, 
+"You slide the keycard through the card reader and the DOOR opens before you. Excellent work, Moon Man!", 
+"IN_INVENTORY", "IN_ROOM", 
+"OPEN_EXIT:door", {}, "KEYCARD", {"IN" : "THROUGH" : "ON"}, "CARD READER"};
+
+droppable=false;
+canTake=true;
+decorative = true;

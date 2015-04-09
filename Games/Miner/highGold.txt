@@ -1,0 +1,8 @@
+itemName = "gold";
+lookDescription = "It's embedded in rock.  It would be tricky, but you think you can mine it.";
+
+uniqueCommands = {{"mine" }, "You remove the gold from the wall, and get GOLD ORE.", "IN_ROOM", "IN_INVENTORY",
+"GOTO_EXIT:FINISHED   GAME", "", "gold", { "with" : "using" }, "pick" };
+
+canTake = false;
+decorative = false;

@@ -1,0 +1,14 @@
+name = "Forge";
+
+description = "You see a fairly large cave, with a large, open FIRE burning next to a COUNTER, crudely carved into the rock on the northwest.  Various BENT TOOLS are hung over the FIRE with CHAINS.BROKEN LAMP  The CENTRAL CAVERN is to the southeast, and there is a path to the northeast.";
+
+itemList = { "fire.txt" :
+			 "counter.txt" :
+			 "chains.txt" :
+			 "benttools.txt" :
+			 "brokenmeltedlamp.txt" };
+			 
+tagList = {"broken and melted lamp", "BROKEN LAMP", "  A BROKEN AND MELTED LAMP has fallen on the ground, it's wall mount melted by the heat of the fire.  It's candle is gone.", "" };
+
+exitList = { {"Central Cavern" : "southeast" : "south east" : "se"}, "A narrow path, which leads back to the Central Cavern.", "centralCavern.txt" :
+			 {"northeast" : "north east" : "ne"}, "Amazingly, even more heat seems to be coming from the path than from the fire.", "lavaPit.txt" };

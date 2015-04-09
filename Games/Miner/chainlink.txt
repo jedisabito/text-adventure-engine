@@ -1,0 +1,5 @@
+itemName = "chain link";
+lookDescription = "The chain link is hanging over the side of ledge, and is fastened so it cannot slide off.  It's about 50 feet up.";
+
+canTake = false;
+decorative = false;

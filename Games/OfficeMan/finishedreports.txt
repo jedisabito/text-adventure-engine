@@ -1,0 +1,12 @@
+itemName = "finished reports";
+lookDescription = " ";
+heldDescription = "You take a moment to admire your work.";
+
+uniqueCommands = {{"FINISH" : "WORK ON" : "COMPLETE"}, 
+"They're already finished. Don't sweat it, Office Man.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"NO_EFFECT", "FINISHED REPORTS"};
+
+droppable=false;
+canTake=false;
+decorative = false;

@@ -1,0 +1,5 @@
+itemName = "counter";
+lookDescription = "It might be crudely carved out of rock, but it's large and attention grabbing.  It also looks like some bored souls gouged a game of tic-tac-toe into it's surface.";
+
+canTake = false;
+decorative = false;

@@ -1,0 +1,8 @@
+itemName = "button";
+lookDescription = "It's located on the floor next to and colored the same as the gate.";
+
+uniqueCommands = {{"stand on" : "hit" : "use" : "jump on" : "press" }, "The gate opens when you stand on it, and you can see shimmering inside.  But it shuts again as soon as you step off.", "IN_ROOM", "IN_ROOM",
+"NO_EFFECT", "button" };
+
+canTake = false;
+decorative = false;

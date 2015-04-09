@@ -1,0 +1,12 @@
+name = "Lava Pit";
+
+description = "You are standing on a narrow rock path, over a pit of lava.ROPE  You can go to the southwest, or to the southeast.";
+
+itemList = { "rope.txt" :
+			 "ropeHelperInLava.txt" };
+			 
+tagList = {"rope", "ROPE", "  A ROPE is hanging over the edge of the path.", "" };
+
+exitList = { {"forge" : "southwest" : "south west" : "sw"}, "A path which leads to the less scorchingly hot, but still very hot, forge.", "forge.txt" :
+			 {"southeast" : "south east" : "se" }, "The path has a cool breeze blowing down it.", "wellCave.txt" :
+			 {"CLIMB   THE   ROPE"}, "", "onRopeAboveLava.txt" };

@@ -1,0 +1,12 @@
+itemName = "Phil";
+lookDescription = "Phil calmly sips from his fresh CUP OF WATER.";
+heldDescription = " ";
+
+uniqueCommands = {{"TALK" : "ENGAGE" : "LEISURELY ENGAGE" : "SPEAK WITH" : "SPEAK TO" : "CHUM IT UP WITH"}, 
+"'Hey, Phil,' you say. Phil barely acknowledges you, taking another sip from that delicious CUP OF WATER.", 
+"IN_ROOM", "IN_INVENTORY", 
+"NO_EFFECT", "PHIL"};
+
+droppable=false;
+canTake=false;
+decorative = false;

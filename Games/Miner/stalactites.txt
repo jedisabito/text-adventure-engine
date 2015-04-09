@@ -1,0 +1,5 @@
+itemName = "stalactites";
+lookDescription = "The things hanging from the ceiling, unless they're the one's coming from the floor.";
+
+canTake = false;
+decorative = false;

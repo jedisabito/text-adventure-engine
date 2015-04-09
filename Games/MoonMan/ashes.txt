@@ -1,0 +1,7 @@
+itemName = "ashes";
+lookDescription = "RIP communicator";
+heldDescription = "RIP communicator";
+
+droppable = false;
+canTake=true;
+decorative = true;

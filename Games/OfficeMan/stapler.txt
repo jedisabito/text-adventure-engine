@@ -1,0 +1,16 @@
+itemName = "stapler";
+lookDescription = "What a nice stapler.";
+heldDescription = "What a nice stapler.";
+
+uniqueCommands = {{"STAPLE"}, 
+"You staple the finished reports together. Almost on cue, the door to your BOSS'S OFFICE swings open.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0|OPEN_EXIT:office", {"stapledreports.txt"}, "FINISHED REPORTS" :
+{"USE"}, 
+"You staple the finished reports together. Almost on cue, the door to your BOSS'S OFFICE swings open.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE2|ADD_TO_INVENTORY:0|OPEN_EXIT:office", {"stapledreports.txt"}, "STAPLER", {"ON"}, "FINISHED REPORTS" };
+
+droppable=false;
+canTake=false;
+decorative = false;

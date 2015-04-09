@@ -1,0 +1,39 @@
+name = "Office Man";
+
+startingRoom = "cubicle.txt";
+startingDescription = "You are Office Man. You must complete your daily tasks before you can go home.";
+endingRoom = "home.txt";
+endingDescription = "Congratulations, Office Man. You're home! You win!";
+help = "Basic Commands:
+-Type 'get [item]' to pick stuff up. 
+-Type 'look [item]' to look at stuff.
+-Type 'look' to get a sense of your surroundings.
+-Type 'inventory' to see what you're carrying.
+-Type 'go [exit]' to go there.
+-Type 'quit' if you don't like this game.
+-Try other things and see if they work.";
+
+prompt = "What do, Office Man? ";
+inventoryName = "You are carrying: ";
+otherItemsList = " You also can see";
+
+invalidDirError = "You can't go there, Office Man. And even if you could, would you? I think we both know the answer to that question.";
+invalidLockedError = "Not yet, Office Man. Your work here isn't quite finished.";
+invalidLookError = "Imagining things again, Office Man?";
+invalidTakeUnseenError = "Yeah right, Office Man. In your dreams.";
+invalidTakeCantTakeError = "Nice try, Office Man.";
+takeNoItemSpecifiedError = "Take what? Specificity is important in the work force, Office Man.";
+invalidDropCantDropError = "You don't get very many things, Office Man. I think you're going to hold on to that.";
+invalidDropNonExistentError = "Don't pretend you have what you don't, Office Man.";
+invalidDropNoItemSpecifiedError = "Drop what?";
+invalidCommandError = "I don't understand you, Office Man. Type 'help' if you need it.";
+
+lookCmds = {"look" : "examine" : "eye" : "read"};
+getCmds = {"get"};
+dropCmds = {"drop" : "lose" : "release" : "throw"};
+goCmds = {"go" : "walk" : "run" : "dash" : "scuttle" : "rampage" : "moonwalk"};
+invCmds = {"inventory" : "inv"};
+helpCmds = {"help" : "stuck"};
+quitCmds = {"quit" : "stop" : "end" };
+
+startingInventory = {"pens.txt"};

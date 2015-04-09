@@ -1,0 +1,6 @@
+itemName = "SHIP";
+lookDescription = "Moon Man's great spaceship, the MOON SHIP 3000. State of the art.";
+heldDescription = " ";
+
+canTake=false;
+decorative = false;

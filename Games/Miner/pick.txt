@@ -1,0 +1,15 @@
+itemName = "pick";
+lookDescription = "You kind of need that for your livelihood.  Without it, you'll probably starve to death.  Might be good to pick it up.";
+heldDescription = "It's metal head is rusted, and it's wooden handle is warped, but it is still perfectly usable.";
+
+uniqueCommands = {{"stick" : "hold"}, "Probably a bad idea.  The handle would burn up... maybe if it was wet.", "IN_INVENTORY", "IN_ROOM", "NO_EFFECT", "pick", {"in" : "over"}, "fire" :
+{"mine"}, "You remove the IRON from the wall, and get IRON ORE.", "IN_ROOM", "IN_INVENTORY", "REMOVE1|ADD_TO_INVENTORY:0", {"ironore.txt"}, "iron", "with", "pick":
+
+{"hit" : "smash" : "bash" : "burn" : "heat" : "break"}, "There's a clanging sound.  The lamp is unaffected.",
+"IN_ROOM", "IN_INVENTORY", "NO_EFFECT", "lamp", {"with" : "on" }, "pick" :
+{"use"}, "There's a clanging sound.  The lamp is unaffected.",
+"IN_INVENTORY", "IN_ROOM", "NO_EFFECT", "pick", {"with" : "on" }, "lamp"}};
+
+canTake=true;
+decorative = true;
+droppable = true;

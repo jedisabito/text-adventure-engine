@@ -1,0 +1,13 @@
+name = "Moon 4";
+
+description = "You are inside the moon lab. The door you came in from has shut behind you.ROBOTMOONHAMMERGATE";
+
+itemList = { "robot.txt" :
+             "moonhammer.txt" };
+
+tagList = {"robot", "ROBOT", " A ROBOT watches you from the center of the room.", " Nothing remains of the robot except for a pile of broken parts.":
+           "moonhammer", "MOONHAMMER", " A giant MOONHAMMER rests against the wall.", "":
+	   "gate", "GATE", " The GATE has opened.", " There is a GATE behind the robot, but it is locked."};
+
+exitList = { {"gate" : "g"}, "The GATE is open.", "moon5.txt", "The GATE is closed.", true:
+             {"door" : "d"}, " ", "moon3.txt", "The door is shut tight. There is no escape.", true};

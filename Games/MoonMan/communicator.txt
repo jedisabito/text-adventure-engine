@@ -1,0 +1,12 @@
+itemName = "COMMUNICATOR";
+lookDescription = "You should definitely get that COMMUNICATOR, Moon Man.";
+heldDescription = "Used for communicating.";
+
+uniqueCommands = {{"USE" : "ACTIVATE" : "TALK" }, 
+"You activate the communicator in an attempt to contact Control. Suddenly, a voice erupts from the device. 'IT'S NOT SAFE, MOON MAN! GET BACK TO YOUR SHIP-' The communicator explodes. Communication is lost.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0", {"ashes.txt"}, "COMMUNICATOR"};
+
+droppable = false;
+canTake=true;
+decorative = true;

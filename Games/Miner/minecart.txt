@@ -1,0 +1,5 @@
+itemName = "minecart";
+lookDescription = "A large, wooden minecart, on some rails leading back up the CENTRAL CAVERN, and down into the depths of the mine.  It's far too heavy for you to push.";
+
+canTake=false;
+decorative = false;

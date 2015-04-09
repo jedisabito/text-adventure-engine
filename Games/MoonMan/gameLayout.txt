@@ -1,0 +1,37 @@
+name = "Moon Man";
+
+startingRoom = "moon1.txt";
+startingDescription = "Welcome. You are Moon Man 2145. You are on the Moon. Complete your mission to win the game!";
+endingRoom = "moon5.txt";
+endingDescription = "Congratulations, Moon Man. You won!";
+help = "Basic Commands:
+-Type 'get [item]' to pick stuff up. 
+-Type 'look [item]' to look at stuff.
+-Type 'look' to get a sense of your surroundings.
+-Type 'inventory' to see what you're carrying.
+-Type 'go [exit]' to go there.
+-Type 'quit' if you don't like this game.
+-Try other things and see if they work.";
+
+prompt = "What do, Moon Man? ";
+inventoryName = "You are carrying: ";
+otherItemsList = " You also can see";
+
+invalidDirError = "You can't go that way, Moon Man. Not without the Hover Boots.";
+invalidLockedError = "Looks like you can't go there right now, Moon Man. Do something first.";
+invalidLookError = "You can't see that, Moon Man! Who do you think you are?";
+invalidTakeUnseenError = "Yeah right, Moon Man. In your dreams.";
+invalidTakeCantTakeError = "Nice try, Moon Man.";
+takeNoItemSpecifiedError = "Take what? You have to set specific goals for yourself, Moon Man.";
+invalidDropCantDropError = "No, wait! You need that, Moon Man!";
+invalidDropNonExistentError = "You would totally drop that if you had it.";
+invalidDropNoItemSpecifiedError = "Drop what? The beat? Haha.";
+invalidCommandError = "I can't even begin to understand you, Moon Man. Type 'help' if you need it.";
+
+lookCmds = {"look" : "examine" : "eye"};
+getCmds = {"get" : "take" : "seize" : "plunder" : "grab"};
+dropCmds = {"drop" : "lose" : "release" : "throw"};
+goCmds = {"go" : "walk" : "run" : "dash" : "scuttle" : "rampage" : "moonwalk"};
+invCmds = {"inventory" : "inv"};
+helpCmds = {"help" : "stuck"};
+quitCmds = {"quit" : "stop" : "end" };

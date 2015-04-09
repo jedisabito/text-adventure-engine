@@ -1,0 +1,11 @@
+itemName = "grappling hook";
+lookDescription = "It's for grappling, and it's made with a fishing hook.  Have fun.";
+
+uniqueCommands = {{"climb"}, "You climbed the rope.", "IN_ROOM", "IN_INVENTORY",
+"GOTO_EXIT:CLIMB   THE   ROPE", "", "grappling hook" :
+{"throw" : "toss" : "use" }, "You can now climb to the gold.", "IN_INVENTORY", "IN_ROOM",
+"REMOVE1|ADD_TO_ROOM:0,1", {"grapplinghooktrigger.txt" : "roomgrapplinghook.txt"}, "grappling hook", {"at" : "with" : "on"}, "tree roots"};
+
+canTake = true;
+decorative = true;
+droppable = true;

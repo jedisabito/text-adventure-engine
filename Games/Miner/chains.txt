@@ -1,0 +1,5 @@
+itemName = "chains";
+lookDescription = "They're suspending BENT WEAPONS over the fire.  The metal is red from heat.";
+
+canTake = false;
+decorative = false;

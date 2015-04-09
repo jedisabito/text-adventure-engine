@@ -1,0 +1,5 @@
+itemName = "bent tools";
+lookDescription = "They're mostly just pick axes, but they are also a couple safety helmets and weapons.";
+
+canTake = false;
+decorative = false;
