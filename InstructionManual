@@ -1,0 +1,186 @@
+Joe DiSabito, Bill Hallahan
+Text-based Adventure Game Engine in Perl: Instruction Manual
+GETTING STARTED
+(for Windows)
+1.	If you do not already have Perl, follow steps 2-5. If you do, skip to step 6.
+2.	Download and install Padre, the Perl IDE/editor through this link: 
+  https://code.google.com/p/padre-perl-ide/downloads/list 
+
+(Strawberry Perl version 5.12.3 comes as part of the install, you also get many other useful CPAN modules as well).
+3.	Log out and back in (or reboot)
+4.	Go to your start menu, then click the "Perl command" link (or just go to “cmd”)
+5.	To confirm the installation worked, type:
+perl -v
+6.	Install App-cpanminus by typing in:
+
+cpan App::cpanminus
+
+7.	Once cpanminus is installed, install the Moose module (necessary for our program) by typing in:
+
+cpanm Moose
+
+8.	Once the installation is complete, you are ready to run adventure.pl. Place adventure.pl in a directory, and then place all relevant files for the actual game in a folder in the same directory. Let’s use Moon Man for example. Title the folder MoonMan, and place all MoonMan files (gameLayout.txt, moon1.txt, etc.) in that folder. 
+9.	Run the program by going into terminal, cd’ing to the proper directory (where adventure.pl and the game folder is), and typing: 
+
+perl adventure.pl
+
+10.	Once the program starts, you will be prompted to input the name of the game folder. Type in MoonMan, or whatever you titled the game folder, and the game will begin! Type “help” during gameplay to get instructions on how to play.
+
+
+HOW TO CREATE YOUR OWN GAME
+
+Getting Started
+To start, create a folder in the same directory as adventure.pl. Name it whatever you want.
+
+Inside the folder, create a text document called “gameLayout”. Copy/paste the following text into it (without the dashes at the beginning and end):
+---
+name = "Name of Game";
+
+startingRoom = "startRoom.txt";
+startingDescription = "Welcome to Name of Game.”
+endingRoom = "endRoom.txt";
+endingDescription = "You win!”
+help = "Basic Commands:
+-Type 'get [item]' to pick stuff up. 
+-Type 'look [item]' to look at stuff.
+-Type 'look' to get a sense of your surroundings.
+-Type 'inventory' to see what you're carrying.
+-Type 'go [exit]' to go there.
+-Type 'quit' to end the game.
+-Try other things and see if they work.";
+
+prompt = "What do you do? ";
+inventoryName = "Inventory: ";
+otherItemsList = " You can also see";
+
+invalidDirError = "You can't go that way.”
+invalidLockedError = "That way is locked.";
+invalidLookError = "You can’t see that.”;
+invalidTakeUnseenError = "You can’t see that.”;
+invalidTakeCantTakeError = "You can’t take that.";
+takeNoItemSpecifiedError = "Take what?";
+invalidDropCantDropError = "You can’t drop that.";
+invalidDropNonExistentError = "You aren’t carrying that.";
+invalidDropNoItemSpecifiedError = "Drop what?";
+invalidCommandError = "That is not a valid command. Type ‘help’ if you need it.”
+
+lookCmds = {"look" : "examine"};
+getCmds = {"get" : "take" };
+dropCmds = {"drop" };
+goCmds = {"go" : "walk"};
+invCmds = {"inventory" : "inv"};
+helpCmds = {"help"};
+quitCmds = {"quit"};
+---
+
+The elements in gameLayout describe basic properties of your game. These properties will always apply wherever the player is. To change any of these elements, simply type in something new. (For instance, to change the name of your game to Hall Runner, type Hall Runner in quotes after ‘name =’ in place of “Name of Game”. Make sure to end each definition with a semicolon.) Below is a description of each element in gameLayout.
+
+name is the name of your game.
+
+startingRoom is the name of the room text file where your game begins.
+startingDescription is the what will be outputted when the game starts.
+endingRoom is the name of the room text file that is the win condition of the game. When the player reaches this room, the game will end.
+endingDescription is what will be outputted when the game is won.
+help is what will be outputted when the user types in one of the helpCmds (like “help”).
+
+prompt is what the game will output to prompt the user for a command.
+inventoryName is what the game will output before listing the items the player is carrying when the player types in one of the invCmds (like “inventory”) to see their inventory.
+otherItemsList is what the game will output before listing any loose items in the current room when outputting that room’s description.
+
+invalidDirError is what the game will output when a player tries to go out an exit that doesn’t exist.
+invalidLockedError is what the game will output when a player tries to go out an exit that is locked.
+invalidLookError is what the game will output when a player looks at something that doesn’t exist.
+invalidTakeUnseenError is what the game will output when a player tries to take something that isn’t there.
+invalidTakeCantTakeError is what the game will output when a player tries to take an item that cannot be picked up.
+takeNoItemSpecifiedError is what the game will output when a player types “take” but nothing else.
+invalidDropCantDropError is what the game will output when a player tries to drop an item that can’t be dropped.
+invalidDropNonExistentError is what the game will output when a player tries to drop an item that they aren’t carrying.
+invalidDropNoItemSpecifiedError is what the game will output when a player types “drop” but nothing else.
+invalidCommandError is what the game will output when the player types in a command that does not exist.
+
+The remaining elements in gameLayout refer to acceptable terms for the game’s basic commands. If you leave it as is, for example, the player will be able to type “look [item]” or “examine [item]” to look at an item in the room. You can modify these commands, or add new commands, as long as they are in quotes, enclosed by brackets, and separated by colons.
+
+lookCmds refers to acceptable commands that allow the player to look at objects in the room.
+getCmds refers to acceptable commands that allow the player to pick up objects in the room.
+dropCmds refers to acceptable commands that allow the player to drop objects in their inventory.
+goCmds refers to acceptable commands that allow the player to go out an exit from the room.
+invCmds refers to acceptable commands that allow the player to see what they are carrying.
+helpCmds refers to acceptable commands that allow the player to see the help information for the game.
+quitCmds refers to acceptable commands that allow the player to quit the game.
+
+Once this is done, the game is still not ready to play. You need at least two rooms, one where the player starts, and one where the game ends.
+
+Making a Room
+To begin, create a text document in your game folder and give it a name (for example, “room1”). If this is going to be the room where the player starts, update startingRoom in the gameLayout file accordingly (or update endingRoom if this is the end room). Then, copy/paste the following example room text between the dashes into it:
+
+---
+name = "Name of Room";
+
+description = "You are in Room 1. ITEM1 ITEM2";
+
+itemList = { "item1.txt" :
+"item2.txt" };
+
+tagList = {“item1”, “ITEM1”, “This is an example description tag for ITEM1.”, “This is usually empty (quotes with no text in them).” :
+“item2”, “ITEM2”, “This is an example description tag for ITEM2.”, “This is usually empty.”};
+
+exitList = { {"north" : "n"}, "This is an example exit to the north.", "room2.txt", "This will be outputted if the exit is locked.", "false" :
+{"south" : "s"}, "This is an example exit to the south.", "room3.txt", "This will be outputted if the exit is locked.", "false" };
+---
+
+The following is a description of each element in a room file.
+
+name is the name of the room.
+
+description is what will be outputted when the player enters the room or types one of the 
+lookCmds without a specified item or exit.
+
+itemList is the list of the names of text files of items that are in this room. Here, item1 and item2 are just examples. Each of these items must be created. List the items within the brackets, put the text file names in quotes, and separate them with colons.
+
+tagList is a way to neatly output in the room description the items that are in the room. To use tags, follow the formatting in this example exactly. 
+
+This example contains two tags separated by a colon. The first element in a tag is the name of the item you want the tag to be linked to. The second element in the tag is what in the room description you want to be replaced with the tag text. The third element is what text you want to be outputted if the item is visible in the room, and the final element is what should be outputted when the item is no longer visible in the room.
+
+In this example, ITEM1 and ITEM2 in the room’s description will be replaced by the third elements of these tags if their respective items are visible, or their fourth elements if not visible.
+
+exitList is a list of the room’s exits. Individual exits are separated by colons. The first element in an exit is a list of acceptable names for that exit. The second element is what is outputted when the player looks at that exit. The third element is the name of the room file where that exit leads to. The fourth element is what will be outputted when a player looks at that exit and it is locked. The final element is whether or not the exit is locked initially (“true” if it is, “false” if it isn’t).
+
+For each exit that leads to a new room, that room must be created in a new text file.
+
+Now, let’s talk about items.
+
+Making an Item
+To start making a new item, create a text document in your game folder and give it a name (for example, “item1”). Add the name of the text file to a room’s itemList if you want it to be in a certain room immediately. Otherwise, you will place it in another item’s unique command, which will be explained shortly. Copy/paste the following text between the dashes into your item file:
+
+---
+itemName = "ITEM1";
+lookDescription = "ITEM1 is in the room.";
+heldDescription = "ITEM1 is in your inventory.";
+
+uniqueCommands = {{"COMMAND1" }, 
+"You carry out COMMAND1 and nothing happens.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"NO_EFFECT", "COMMUNICATOR" :
+{"COMMAND2" }, 
+"You carry out COMMAND2 and ITEM1 is replaced with ITEM2.", 
+"IN_INVENTORY", "IN_INVENTORY", 
+"REMOVE1|ADD_TO_INVENTORY:0", {“item2.txt”}, "ITEM1"};
+
+droppable = false;
+canTake=true;
+decorative = true;
+---
+
+The following is a description of each element in an item file.
+
+itemName is the name of the item.
+lookDescription is what is outputted when a player looks at the item while it is in the current room.
+heldDescription is what is outputted when a player looks at the item while it is in their inventory.
+
+uniqueCommands are unique commands specific to an item. The first element of a command is a list of acceptable names for that command. The second element is the command description that is outputted when the command is carried out. The third and fourth elements refer to the two items this command applies to. Possible values for these elements are “IN_INVENTORY” and “IN_ROOM”. These elements determine where the two items (or one item) need to be in order for the command to be carried out successfully. The fifth element is the effect of the command. [PUT MORE STUFF HERE]
+
+droppable is a Boolean that determines whether or not the player can drop this item.
+canTake is a Boolean that determines whether or not the player can take this item.
+decorative is a Boolean that determines whether or not this item will appear in the list of items at the end of the room description if this item is in the room.
+
+Once you’ve created at least two connected rooms and have populated them with items, you are ready to test your game out. Start the program and type in the name of your folder when prompted to begin your game. 
